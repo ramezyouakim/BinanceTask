@@ -41,14 +41,6 @@ IOS
   cd ..
   npx react-native run-ios
 ```
-or
-```bash
-  1- cd ios
-  2- pod install
-  3- run using Xcode
-  4- open blogapp.xcworkspace using Xcode 
-  5- click on the play button 
-```
 
 Android 
 
