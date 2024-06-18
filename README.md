@@ -1,10 +1,12 @@
 
 ## Intro
 Technical Challenge React Native
-Please contact me if there is any issues running the project
-Please note that there is no icons added to the bottom tab bar (so it's not a bug)
 
-Please note since this a task and no atomic commits was used more about [atomic commits](https://en.wikipedia.org/wiki/Atomic_commit#:~:text=In%20the%20field%20of%20computer,is%20said%20to%20have%20succeeded.)
+Please contact me if there is any issues running the project
+
+Please note that there are no icons added to the bottom tab bar (so it's not a bug)
+
+Please note since this is a task and no atomic commits were used more about [atomic commits](https://en.wikipedia.org/wiki/Atomic_commit#:~:text=In%20the%20field%20of%20computer,is%20said%20to%20have%20succeeded.)
 # Before You run
 
 1- make sure you have the [environment setup](https://reactnative.dev/docs/environment-setup)
