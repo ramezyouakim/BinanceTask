@@ -72,7 +72,7 @@ You can download an apk form here [download](https://drive.google.com/file/d/18f
 
 ###  Running the app:
 Failed to connect to debugger
-[![App Screenshot](readmeAssets/4.png)](https://github.com/ramezyouakim/BinanceTask/assets/18330434/02b082f5-e9e0-4543-90d8-06a676fe9811)
+[![App Screenshot](https://github.com/ramezyouakim/BinanceTask/assets/18330434/02b082f5-e9e0-4543-90d8-06a676fe9811)
 
 ```bash
 1- Open React Native Dev Menu
