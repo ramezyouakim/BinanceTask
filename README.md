@@ -66,33 +66,14 @@ Start the server
 
 # APK
 
-You can download an apk form here [download](https://drive.google.com/file/d/1azpHI-bbakkAQFJ9FS3wfkdfOrAe8iZR/view?usp=sharing)
+You can download an apk form here [download](https://drive.google.com/file/d/18fx6oacwvw4SNenrOrZ0z63odkzfExWz/view?usp=sharing)
 
 # Troubleshooting
 
-###  Running IOS:
-
-The following build commands failed:
-        CompileC /Users/user//Library/Developer/Xcode/DerivedData/blogapp-dhfooftymuibmdcvqgndueftusco/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/React-Codegen.build/Objects-normal/arm64/FBReactNativeSpec-generated.o /Users/user/Documents/testupshift/blogapp/ios/build/generated/ios/FBReactNativeSpec/FBReactNativeSpec-generated.mm normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'React-Codegen' from project 'Pods')
-(1 failure)
-
-Or
-![App Screenshot](readmeAssets/1.png)
-(1)
-
-Solution:- 
-open blogapp.xcworkspace using Xcode and try to run the project if the error in image (1) appears 
-Click on the error or Pods from the left menu
-Click on the React-Codegen on the left menu
-Update the IOS Deployment Target from IOS 11.2 to IOS 12.0
-![App Screenshot](readmeAssets/2.png) to ![App Screenshot](readmeAssets/3.png)
-Clean the build folder from the top menu Product > clean build folder
-Re-run the project
-
-
 ###  Running the app:
 Failed to connect to debugger
-![App Screenshot](readmeAssets/4.png)
+[![App Screenshot](readmeAssets/4.png)](https://github.com/ramezyouakim/BinanceTask/assets/18330434/02b082f5-e9e0-4543-90d8-06a676fe9811)
+
 ```bash
 1- Open React Native Dev Menu
 2- Go to Dev settings > Debug server host & port for device
