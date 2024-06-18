@@ -1,79 +1,107 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-# Getting Started
+## Intro
+Technical Challenge React Native
+Please contact me if there is any issues running the project
+Please note that there is no icons added to the bottom tab bar (so it's not a bug)
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+Please note since this a task and no atomic commits was used more about [atomic commits](https://en.wikipedia.org/wiki/Atomic_commit#:~:text=In%20the%20field%20of%20computer,is%20said%20to%20have%20succeeded.)
+# Before You run
 
-## Step 1: Start the Metro Server
+1- make sure you have the [environment setup](https://reactnative.dev/docs/environment-setup)
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+2- for Android add your SDK path inside `android/local.properties` for exmaple `sdk.dir=YOUR_ANDROID_SDK_PATH` and make sure that the JDK 17 is installed and configured on your machine
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## Run Locally
 
-```bash
-# using npm
-npm start
-
-# OR using Yarn
-yarn start
-```
-
-## Step 2: Start your Application
-
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
+Clone the project
 
 ```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
+  git clone https://github.com/ramezyouakim/BinanceTask.git
 ```
 
-### For iOS
+Go to the project directory
 
 ```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
+  cd BinanceTask
 ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+Install dependencies
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+```bash
+  yarn install
+```
 
-## Step 3: Modifying your App
+IOS 
 
-Now that you have successfully run the app, let's modify it.
+```bash
+  cd ios
+  pod install
+  cd ..
+  npx react-native run-ios
+```
+or
+```bash
+  1- cd ios
+  2- pod install
+  3- run using Xcode
+  4- open blogapp.xcworkspace using Xcode 
+  5- click on the play button 
+```
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+Android 
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+```bash
+  cd android
+  ./graldew clean
+  cd ..
+  npx react-native run-android
+```
 
-## Congratulations! :tada:
+Start the server
 
-You've successfully run and modified your React Native App. :partying_face:
+```bash
+ npx react-native start --reset-cache
+```
 
-### Now what?
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+# APK
+
+You can download an apk form here [download](https://drive.google.com/file/d/1azpHI-bbakkAQFJ9FS3wfkdfOrAe8iZR/view?usp=sharing)
 
 # Troubleshooting
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+###  Running IOS:
 
-# Learn More
+The following build commands failed:
+        CompileC /Users/user//Library/Developer/Xcode/DerivedData/blogapp-dhfooftymuibmdcvqgndueftusco/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/React-Codegen.build/Objects-normal/arm64/FBReactNativeSpec-generated.o /Users/user/Documents/testupshift/blogapp/ios/build/generated/ios/FBReactNativeSpec/FBReactNativeSpec-generated.mm normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'React-Codegen' from project 'Pods')
+(1 failure)
 
-To learn more about React Native, take a look at the following resources:
+Or
+![App Screenshot](readmeAssets/1.png)
+(1)
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Solution:- 
+open blogapp.xcworkspace using Xcode and try to run the project if the error in image (1) appears 
+Click on the error or Pods from the left menu
+Click on the React-Codegen on the left menu
+Update the IOS Deployment Target from IOS 11.2 to IOS 12.0
+![App Screenshot](readmeAssets/2.png) to ![App Screenshot](readmeAssets/3.png)
+Clean the build folder from the top menu Product > clean build folder
+Re-run the project
+
+
+###  Running the app:
+Failed to connect to debugger
+![App Screenshot](readmeAssets/4.png)
+```bash
+1- Open React Native Dev Menu
+2- Go to Dev settings > Debug server host & port for device
+3- Set YOUR_MACHINE_IP:8081
+4- npm start --reset-cache
+5- reload the app
+```
+
+# third-party libraries
+1- [mobx](https://www.npmjs.com/package/mobx)
+2- [mobx-react](https://www.npmjs.com/package/mobx-react)
+
